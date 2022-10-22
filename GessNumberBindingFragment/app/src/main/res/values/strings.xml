@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GessNumberBindingFragment</string>
+    <string name="action_settings">Opciones</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primer Fragmen</string>
+    <string name="second_fragment_label">Segundo Fragment</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+
+    <string name="hello_first_fragment">Hola primer fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="etHintUser">Usuario</string>
+    <string name="etHintIntentos">Nº de intentos</string>
+    <string name="etTextUser" translatable="false" />
+    <string name="etNumTries" translatable="false" />
+    <string name="btJugarText">!A jugar¡</string>
+    <string name="btResponderText">Jugar</string>
+    <string name="etHintRespuesta">Respuesta</string>
+    <string name="etTextRespuesta" translatable="false" />
+    <string name="tvTextResultado" translatable="false" />
+    <string name="tvHintResultado">resultado</string>
+    <string name="tvTextoFinal">FIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento vacio</string>
+    <string name="etTextIntentos" />
+</resources>

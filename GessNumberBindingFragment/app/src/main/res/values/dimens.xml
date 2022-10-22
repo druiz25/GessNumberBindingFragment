@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="genMargin">50dp</dimen>
+    <dimen name="genMarginLand">25dp</dimen>
+    <dimen name="btnJugMargin">25dp</dimen>
+    <dimen name="btnResMargin">25dp</dimen>
+    <dimen name="tvTextFinMarg">60dp</dimen>
+    <dimen name="tvTextFinTopMarg">300dp</dimen>
+</resources>

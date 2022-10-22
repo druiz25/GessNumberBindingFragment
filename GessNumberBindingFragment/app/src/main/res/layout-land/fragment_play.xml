@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="partida"
+            type="com.example.gessnumberbindingfragment.data.PartidaGuessNumer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.FragmentPlay">
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genMarginLand"
+            android:autofillHints=""
+            android:hint="@string/tvHintResultado"
+            android:text="@string/tvTextResultado"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genMargin"
+            android:autofillHints=""
+            android:hint="@string/etHintRespuesta"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="@string/etTextRespuesta"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btnResponder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genMarginLand"
+            android:text="@string/btResponderText" />
+
+    </LinearLayout>
+</layout>

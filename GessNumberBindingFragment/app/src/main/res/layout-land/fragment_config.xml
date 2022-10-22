@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="partida"
+            type="com.example.gessnumberbindingfragment.data.PartidaGuessNumer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genMarginLand"
+            android:autofillHints=""
+            android:hint="@string/etHintUser"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@={partida.usuario}"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etNumTries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/genMarginLand"
+            android:autofillHints=""
+            android:hint="@string/etHintIntentos"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="@string/etTextIntentos"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btnJugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnJugMargin"
+            android:text="@string/btJugarText" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentConfig">
+
+    <fragment
+        android:id="@+id/fragmentConfig"
+        android:name="com.example.gessnumberbindingfragment.ui.FragmentConfig"
+        android:label="FragmentConfig" >
+        <action
+            android:id="@+id/action_fragmentConfig_to_fragmentPlay"
+            app:destination="@id/fragmentPlay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPlay"
+        android:name="com.example.gessnumberbindingfragment.ui.FragmentPlay"
+        android:label="fragment_play"
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_fragmentPlay_to_fragmentEndPlay"
+            app:destination="@id/fragmentEndPlay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEndPlay"
+        android:name="com.example.gessnumberbindingfragment.ui.FragmentEndPlay"
+        android:label="FragmentEndPlay" />
+</navigation>
