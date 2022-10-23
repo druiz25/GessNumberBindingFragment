@@ -22,5 +22,8 @@
     <string name="tvTextoFinal">FIN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hola fragmento vacio</string>
-    <string name="etTextIntentos" />
+    <string name="etTextIntentos" translatable="false" />
+    <string name="txtBtnVolverAJugar">Volver a Jugar</string>
+    <string name="txtResultMayor">El numero introducido es mayor que el numero secreto</string>
+    <string name="txtResultMenor">El numero introducido es menor que el numero secreto</string>
 </resources>

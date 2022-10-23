@@ -15,5 +15,8 @@
     <string name="tvHintResultado">result</string>
     <string name="tvTextoFinal">END</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="etHintIntentos">Number of intent</string>
+    <string name="etHintIntentos">Number of tries</string>
+    <string name="txtBtnVolverAJugar">Play again</string>
+    <string name="txtResultMayor">The introduced number is bigger than the secret number</string>
+    <string name="txtResultMenor">The introduced number is smaller than the secret number</string>
 </resources>

@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Random;
 
 public class PartidaGuessNumer implements Serializable, Parcelable {
-    private static Random rnd = new Random();
+    private static final Random rnd = new Random();
     private String usuario;
     private Integer numTries;
     private Integer vecFalladas;

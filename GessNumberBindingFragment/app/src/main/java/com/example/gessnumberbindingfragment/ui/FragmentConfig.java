@@ -9,7 +9,6 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.gessnumberbindingfragment.R;
 import com.example.gessnumberbindingfragment.data.PartidaGuessNumer;
@@ -19,22 +18,16 @@ public class FragmentConfig extends Fragment {
 
     private FragmentConfigBinding binding;
 
-    interface OnSetDataPartida {
-        void onSetDataMessage(PartidaGuessNumer partida);
-    }
-
     public FragmentConfig() {
-        // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentConfigBinding.inflate(inflater);
@@ -42,7 +35,7 @@ public class FragmentConfig extends Fragment {
             binding.setPartida(savedInstanceState.getParcelable("partida"));
         } else
             binding.setPartida(new PartidaGuessNumer());
-        binding.btnJugar.setOnClickListener(view -> { enviarBundle(); });
+        binding.btnJugar.setOnClickListener(view -> enviarBundle());
         return binding.getRoot();
     }
 

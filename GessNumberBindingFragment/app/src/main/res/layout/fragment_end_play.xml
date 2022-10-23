@@ -14,12 +14,21 @@
 
         <TextView
             android:id="@+id/tvTextoFinal"
-            android:layout_width="305dp"
+            android:layout_width="@dimen/widthtvTextoFinal"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="@dimen/tvTextFinMarg"
             android:layout_marginTop="@dimen/tvTextFinTopMarg"
             android:text="@string/tvTextoFinal"
             android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnVolverAJugar"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/genMargin"
+            android:text="@string/txtBtnVolverAJugar"/>
+
     </LinearLayout>
 </layout>

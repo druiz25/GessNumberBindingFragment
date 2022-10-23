@@ -6,4 +6,7 @@
     <dimen name="btnResMargin">25dp</dimen>
     <dimen name="tvTextFinMarg">60dp</dimen>
     <dimen name="tvTextFinTopMarg">300dp</dimen>
+    <dimen name="tvTextFinTopMargLand">200dp</dimen>
+    <dimen name="widthtvTextoFinal">305dp</dimen>
+    <dimen name="genMarginBtnEnd">10dp</dimen>
 </resources>

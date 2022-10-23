@@ -1,17 +1,16 @@
 package com.example.gessnumberbindingfragment.ui;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+
 import com.example.gessnumberbindingfragment.R;
-import com.example.gessnumberbindingfragment.data.PartidaGuessNumer;
 import com.example.gessnumberbindingfragment.databinding.FragmentEndPlayBinding;
 
 public class FragmentEndPlay extends Fragment {
@@ -27,10 +26,11 @@ private FragmentEndPlayBinding binding;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentEndPlayBinding.inflate(inflater);
+        binding.btnVolverAJugar.setOnClickListener(view -> NavHostFragment.findNavController(this).navigate(R.id.action_fragmentEndPlay_to_fragmentConfig));
         return binding.getRoot();
     }
 
@@ -42,12 +42,13 @@ private FragmentEndPlayBinding binding;
         }
     }
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        assert getArguments() != null;
         binding.setPartida(getArguments().getParcelable("partida"));
         finalPartida();
+
     }
 
     @Override

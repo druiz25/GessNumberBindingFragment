@@ -25,5 +25,9 @@
     <fragment
         android:id="@+id/fragmentEndPlay"
         android:name="com.example.gessnumberbindingfragment.ui.FragmentEndPlay"
-        android:label="FragmentEndPlay" />
+        android:label="FragmentEndPlay" >
+        <action
+            android:id="@+id/action_fragmentEndPlay_to_fragmentConfig"
+            app:destination="@id/fragmentConfig" />
+    </fragment>
 </navigation>
