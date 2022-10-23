@@ -1,13 +1,11 @@
 # GessNumberBindingFragment
 Autor: Daniel Ruiz Villodres <br />
 Minimum SDK: API 21 Android 5.0 (Lollipop)
+Es un simple juego de adivinar un numero aleatorio en un numero de tiradas que decida el usuario introduciendo su nombre y estos en esta aplicacion se hace uso de los fragment en vez de activity aparte de implementar el data y view binding y guardando los estados lo que permite que se gire la pantalla sin perder datos introducidos.
 
 # Desglose del proyecto
 -Clase PartidaGuessNumer
-  implementa la interfaz Serializable, Parcelable para pasar el objeto de la partida de una activity a otra con el intent.
-
-En esta clase decidi crear dos constructores uno con todos sus campos y otro que solo pidiera el usuario, numero de intentos y el estado de la partida, este ultimo lo uso en la ConfigActivity introduciendo solo el usuario y numero de tiradas, en la PlayActivity contando ya con el resto de valores uso el constructor completo, aparte cuenta con los getter y setter de todas sus propiedades como los metodos que vienen de las interfazes implementadas.
-
+  implementa la interfaz Serializable, Parcelable para pasar el objeto de un fragment a otro.
 # -FragmentConfig
   Diseño fragment <br />
 [![ConfigActivity](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBQB8d_oGUjOlH4RrN7A5l8ZEggXpQHd9rDm-spai37WS7rMPE6AClIyvYw70XETRB2s0Ih7ymeXL9tQKmwWi0VicZgU32zx3d8_gbtpg3HTnM1y4bMaaqlg7notOBw21f4-yakS1XvUpydOdmFSMDTY_ZiCsY8Cz81a_NYxeh3Z5rRRr1OfXqvA-uyg/s320/2.PNG "ConfigActivity")](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBQB8d_oGUjOlH4RrN7A5l8ZEggXpQHd9rDm-spai37WS7rMPE6AClIyvYw70XETRB2s0Ih7ymeXL9tQKmwWi0VicZgU32zx3d8_gbtpg3HTnM1y4bMaaqlg7notOBw21f4-yakS1XvUpydOdmFSMDTY_ZiCsY8Cz81a_NYxeh3Z5rRRr1OfXqvA-uyg/s320/2.PNG "ConfigActivity")
