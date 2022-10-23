@@ -1,7 +1,7 @@
 # GessNumberBindingFragment
 Autor: Daniel Ruiz Villodres <br />
 Minimum SDK: API 21 Android 5.0 (Lollipop)
-Es un simple juego de adivinar un numero aleatorio en un numero de tiradas que decida el usuario introduciendo su nombre y estos en esta aplicacion se hace uso de los fragment en vez de activity aparte de implementar el data y view binding y guardando los estados lo que permite que se gire la pantalla sin perder datos introducidos.
+<br /><br />Es un simple juego de adivinar un numero aleatorio en un numero de tiradas que decida el usuario introduciendo su nombre y estos en esta aplicacion se hace uso de los fragment en vez de activity aparte de implementar el data y view binding y guardando los estados lo que permite que se gire la pantalla sin perder datos introducidos.
 
 # Desglose del proyecto
 -Clase PartidaGuessNumer
